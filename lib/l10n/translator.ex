@@ -64,7 +64,7 @@ defmodule Timex.Translator do
   Returns the currently configured default locale. If not set, "en" is used.
   """
   @spec default_locale() :: String.t
-  def default_locale, do: Application.get_env(:timex, :default_locale, "en")
+  def default_locale, do: "en"
 
   @doc """
   Returns a map of ordinal weekdays to weekday names, where Monday = 1,
