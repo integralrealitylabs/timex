@@ -48,10 +48,10 @@ defmodule Timex.Format.DateTime.Formatters.Relative do
       {:ok, "1 minute ago"}
   """
   @spec format(Types.calendar_types, String.t) :: {:ok, String.t} | {:error, term}
-  def format(date, format_string),  do: lformat(date, format_string, Translator.default_locale)
+  def format(date, format_string),  do: lformat(date, format_string, "en")
 
   @spec format!(Types.calendar_types, String.t) :: String.t | no_return
-  def format!(date, format_string), do: lformat!(date, format_string, Translator.default_locale)
+  def format!(date, format_string), do: lformat!(date, format_string, "en")
 
   @spec lformat(Types.calendar_types, String.t, String.t) :: {:ok, String.t} | {:error, term}
   def lformat(date, format_string, locale) do
@@ -73,7 +73,7 @@ defmodule Timex.Format.DateTime.Formatters.Relative do
   end
 
   def relative_to(date, relative_to, format_string) do
-    relative_to(date, relative_to, format_string, Translator.default_locale)
+    relative_to(date, relative_to, format_string, "en")
   end
   def relative_to(date, relative_to, format_string, locale) do
     case tokenize(format_string) do

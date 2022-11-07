@@ -105,7 +105,7 @@ defmodule Timex.Format.DateTime.Formatter do
   def format!(date, format_string, formatter \\ Default)
 
   def format!(date, format_string, formatter),
-    do: lformat!(date, format_string, Translator.default_locale, formatter)
+    do: lformat!(date, format_string, "en", formatter)
 
   @doc """
   Formats a Date, DateTime, or NaiveDateTime as a string, using the provided format
@@ -118,11 +118,11 @@ defmodule Timex.Format.DateTime.Formatter do
   def format(date, format_string, formatter \\ Default)
 
   def format(datetime, format_string, :strftime),
-    do: lformat(datetime, format_string, Translator.default_locale, Strftime)
+    do: lformat(datetime, format_string, "en", Strftime)
   def format(datetime, format_string, :relative),
-    do: lformat(datetime, format_string, Translator.default_locale, Relative)
+    do: lformat(datetime, format_string, "en", Relative)
   def format(datetime, format_string, formatter),
-    do: lformat(datetime, format_string, Translator.default_locale, formatter)
+    do: lformat(datetime, format_string, "en", formatter)
 
   @doc """
   Validates the provided format string, using the provided formatter,
@@ -155,7 +155,7 @@ defmodule Timex.Format.DateTime.Formatter do
   """
   @spec format_token(atom, Types.calendar_types, list(), list(), list()) :: String.t | {:error, term}
   def format_token(token, date, modifiers, flags, width) do
-    format_token(Translator.default_locale, token, date, modifiers, flags, width)
+    format_token("en", token, date, modifiers, flags, width)
   end
 
   @doc """
