@@ -1,0 +1,12 @@
+language: elixir
+sudo: false
+elixir:
+  - 1.3
+otp_release:
+  - 18.3
+  - 19.1
+script:
+  - "MIX_ENV=test mix do deps.get, compile, coveralls.travis"
+notifications:
+  recipients:
+    - paulschoenfelder@gmail.com
