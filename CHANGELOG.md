@@ -161,10 +161,6 @@ This release adds the base for locale-awareness in Timex, including one locale (
 in another locale, and functions which return names of things will now use the default locale. To configure Timex's default
 locale, put the following in config.exs:
 
-```elixir
-config :timex, default_locale: "ru" # or whatever locale you want
-```
-
 ### Added
 - The ability to configure a default locale (the default is "en" if no config is provided) for formatting/translation of strings
 - The ability to format a string using a given locale, otherwise the default locale is used

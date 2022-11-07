@@ -1,5 +1,5 @@
 use Mix.Config
 
-config :timex, default_locale: "en"
+config :timex
 
 import_config "#{Mix.env}.exs"
