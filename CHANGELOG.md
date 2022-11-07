@@ -113,8 +113,8 @@ The list of these changes will be comprehensively spelled out below, along with 
 of removals.
 
 ### Fixed
-- [#185](https://github.com/bitwalker/timex/issues/185)
-- [#137](https://github.com/bitwalker/timex/issues/137)
+- [#185](https://github.com/integralrealitylabs/timex/issues/185)
+- [#137](https://github.com/integralrealitylabs/timex/issues/137)
 
 ### Added
 - `Timex.Protocol` (defines the API all calendar types must implement to be used with Timex)

@@ -4,7 +4,7 @@
 
 Implementing your own custom formatter is pretty straightforward if you plan to use one of the built-in format string tokenizers (default or strftime). The following example will use a custom tokenizer, and implement the formatter over the top of that.
 
-The tokenizer is implemented as described in the [Custom Parsers](doc:custom-parsers) section, and the source code can be found in the Timex repo [here](https://github.com/bitwalker/timex/blob/master/examples/tokenizer/humanized.exs).
+The tokenizer is implemented as described in the [Custom Parsers](doc:custom-parsers) section, and the source code can be found in the Timex repo [here](https://github.com/integralrealitylabs/timex/blob/master/examples/tokenizer/humanized.exs).
 
 ### Getting Started
 

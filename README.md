@@ -1,9 +1,9 @@
 ## Timex
 
-[![Master](https://travis-ci.org/bitwalker/timex.svg?branch=master)](https://travis-ci.org/bitwalker/timex)
+[![Master](https://travis-ci.org/integralrealitylabs/timex.svg?branch=master)](https://travis-ci.org/integralrealitylabs/timex)
 [![Hex.pm Version](http://img.shields.io/hexpm/v/timex.svg?style=flat)](https://hex.pm/packages/timex)
-[![InchCI](https://inch-ci.org/github/bitwalker/timex.svg?branch=master)](https://inch-ci.org/github/bitwalker/timex)
-[![Coverage Status](https://coveralls.io/repos/github/bitwalker/timex/badge.svg?branch=master)](https://coveralls.io/github/bitwalker/timex?branch=master)
+[![InchCI](https://inch-ci.org/github/integralrealitylabs/timex.svg?branch=master)](https://inch-ci.org/github/integralrealitylabs/timex)
+[![Coverage Status](https://coveralls.io/repos/github/integralrealitylabs/timex/badge.svg?branch=master)](https://coveralls.io/github/integralrealitylabs/timex?branch=master)
 
 Timex is a rich, comprehensive Date/Time library for Elixir projects, with full timezone support via the `:tzdata` package. If
 you need to manipulate dates, times, datetimes, timestamps, etc., then Timex is for you! It is very easy to use Timex types
@@ -14,7 +14,7 @@ The complete documentation for Timex is located [here](https://hexdocs.pm/timex)
 ## Migrating to Timex 3.x
 
 See the Migrating section further down for details. If you are migrating from earlier than 2.x,
-please review [this migration doc for 1.x to 2.x](https://github.com/bitwalker/timex/tree/2.2.1#migrating).
+please review [this migration doc for 1.x to 2.x](https://github.com/integralrealitylabs/timex/tree/2.2.1#migrating).
 
 Timex 3.0 is a significant rewrite, in order to accommodate Elixir 1.3's new Calendar types in a semantically
 correct way. The external API is mostly the same, but there are changes, many without deprecations, so please

@@ -17,7 +17,7 @@ defmodule Timex.Mixfile do
   end
 
   def application do
-    [extra_applications: [:gettext], 
+    [extra_applications: [:gettext],
      applications: [:logger, :tzdata, :gettext, :combine],
      env: [local_timezone: nil, default_locale: "en"],
      mod: {Timex, []}]
@@ -34,7 +34,7 @@ defmodule Timex.Mixfile do
     [ files: ["lib", "priv", "mix.exs", "README.md", "LICENSE.md"],
       maintainers: ["Paul Schoenfelder"],
       licenses: ["MIT"],
-      links: %{ "GitHub": "https://github.com/bitwalker/timex" } ]
+      links: %{ "GitHub": "https://github.com/integralrealitylabs/timex" } ]
   end
 
   def deps do
@@ -51,7 +51,7 @@ defmodule Timex.Mixfile do
     [main: "getting-started",
      formatter_opts: [gfm: true],
      source_ref: @version,
-     source_url: "https://github.com/bitwalker/timex",
+     source_url: "https://github.com/integralrealitylabs/timex",
      extras: [
        "docs/Getting Started.md",
        "CHANGELOG.md",
